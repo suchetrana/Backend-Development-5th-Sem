@@ -7,3 +7,5 @@ function add(a, b){
 }
 
 
+module.exports.mul = mul;
+module.exports.add = add;
