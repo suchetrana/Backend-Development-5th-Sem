@@ -1,0 +1,18 @@
+{
+  "name": "@suchet.rana/sumpackage",
+  "version": "1.0.2",
+  "main": "Lec-3-continue/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Suchet",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@suchet.rana/sumpackage": "^1.0.1",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "hbs": "^4.2.0"
+  }
+}
