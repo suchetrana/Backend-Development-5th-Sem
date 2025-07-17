@@ -1,6 +1,6 @@
 const fs = require('fs');
 const { json } = require('stream/consumers');
-
+const {read, write} = require('../IO/index')
 fs.readFile("../users.txt", "utf-8", function(err, data){
     if(err) return console(err);
     let data0 = JSON.parse(data);
@@ -25,7 +25,10 @@ async function task(file1, file2, file3) {
     let users = await read(file2);
     // let a = JSON.stringify(user);
     // let b = JSON.stringify(user2);
-    let allUser = a.concat(b);
+    let allUser = user.concat(users);
     let mes = await write(file3, JSON.stringify(allUser));
     console.log(mes);
 }
+
+
+task("../users.txt", "../users2.txt", "./newUser.txt");

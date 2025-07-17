@@ -1,4 +1,6 @@
 const fs = require('fs');
+
+
 function read(file){
     return new Promise((resolve, reject)=>{
         fs.readFile(file, "utf-8", function(err, data){
@@ -8,6 +10,8 @@ function read(file){
         })
     })
 }
+
+
 function write(file, data){
     return new Promise((resolve, reject)=>{
 
@@ -18,7 +22,7 @@ function write(file, data){
     })
 }
 
-module.exports = read;
-module.exports = write;
+module.exports.read = read;
+module.exports.write = write;
 
 
