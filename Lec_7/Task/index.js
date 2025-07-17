@@ -23,8 +23,8 @@ fs.readFile("../users.txt", "utf-8", function(err, data){
 async function task(file1, file2, file3) {
     let user = await read(file1);
     let users = await read(file2);
-    let a = JSON.stringify(user);
-    let b = JSON.stringify(user2);
+    // let a = JSON.stringify(user);
+    // let b = JSON.stringify(user2);
     let allUser = a.concat(b);
     let mes = await write(file3, JSON.stringify(allUser));
     console.log(mes);
